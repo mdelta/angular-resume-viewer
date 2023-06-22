@@ -1,4 +1,7 @@
-<div>
-    <div>{{resumeData.basics.label}}</div>
-    <div>right</div>
+<div>{{ resumeData.basics.label }}</div>
+<div class="grid-container">
+  <div>
+    <app-education [items]="educationData"></app-education>
+  </div>
+  <div>right</div>
 </div>

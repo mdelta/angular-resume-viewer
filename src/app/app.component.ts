@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as data from '../assets/resume.json';
+import { Education } from 'src/model/education.model';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,17 @@ export class AppComponent {
   title = 'ResumeViewer';
   resumeData = data;
 
+  educationData: Education[] = [];
+
   ngOnInit() {
-    console.log(data);
+    for (const item of this.resumeData.education) {
+      const education = new Education(
+        item.studyType,
+        item.institution,
+        new Date(item.startDate),
+        new Date(item.endDate)
+      );
+      this.educationData.push(education);
+    }
   }
 }

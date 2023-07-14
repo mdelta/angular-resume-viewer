@@ -3,5 +3,17 @@
   <div>
     <app-education [items]="educationData"></app-education>
   </div>
-  <div>right</div>
+  <div id="rightcol">
+    <app-flipcard>
+      <div front>
+        <app-name
+          [name]="resumeData.basics.name"
+          [title]="resumeData.basics.label"
+        ></app-name>
+      </div>
+      <div back>
+        <app-vcard></app-vcard>
+      </div>
+    </app-flipcard>
+  </div>
 </div>

@@ -9,6 +9,9 @@ import { EducationItemComponent } from './education/education-item/education-ite
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatIconModule } from '@angular/material/icon';
+import { NameComponent } from './name/name.component';
+import { VcardComponent } from './vcard/vcard.component';
+import { FlipcardComponent } from './flipcard/flipcard.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { MatIconModule } from '@angular/material/icon';
     EducationListComponent,
     EducationItemComponent,
     EducationComponent,
+    NameComponent,
+    VcardComponent,
+    FlipcardComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,12 +15,7 @@ export class AppComponent {
 
   ngOnInit() {
     for (const item of this.resumeData.education) {
-      const education = new Education(
-        item.studyType,
-        item.institution,
-        new Date(item.startDate),
-        new Date(item.endDate)
-      );
+      const education = new Education(item);
       this.educationData.push(education);
     }
   }

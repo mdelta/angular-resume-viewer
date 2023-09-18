@@ -8,7 +8,10 @@ import { EducationListComponent } from './education/education-list/education-lis
 import { EducationItemComponent } from './education/education-item/education-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+
 import { NameComponent } from './name/name.component';
 import { VcardComponent } from './vcard/vcard.component';
 import { FlipcardComponent } from './flipcard/flipcard.component';
@@ -28,6 +31,8 @@ import { FlipcardComponent } from './flipcard/flipcard.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatChipsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

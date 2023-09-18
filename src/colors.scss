@@ -1,0 +1,51 @@
+* {
+  --white: #ffffff;
+  --black: #000000;
+
+  --blue-100: #1976d2;
+  --blue-200: #125699;
+
+  --gray-100: #eee;
+  --gray-200: #fafafa;
+  --gray-300: #c2c3c4;
+  --gray-400: #888;
+
+  --dark-gray-100: rgb(58, 58, 58);
+  --dark-gray-200: #303030;
+  --dark-gray-300: rgba(27, 31, 35, 0.2);
+  --dark-gray-400: rgba(27, 31, 35, 0.35);
+  --dark-gray-500: rgb(15, 15, 16);
+
+  /* Light */
+
+  --body-background-light: var(--white);
+
+  --primary-color-light: blue;
+  --primary-background-color-light: white;
+  --primary-text-color-light: black;
+
+  --secondary-color-light: red;
+  --secondary-background-color-light: var(--black);
+  --secondary-text-color-light: var(--white);
+
+  /* Dark */
+
+  --body-background-dark: var(--dark-gray-100);
+}
+
+:root {
+  color-scheme: light;
+
+  --background: var(--body-background-light);
+
+  --secondary-background-color: var(--secondary-background-color-light);
+  --secondary-text-color: var(--secondary-text-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --background: var(--body-background-dark);
+  }
+}

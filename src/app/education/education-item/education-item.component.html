@@ -1,4 +1,16 @@
 <div>
-  {{ formatDate(element.startDate) }} - {{ formatDate(element.endDate) }}
+  <time dateTime="{{ formatDate(element.startDate) }}">{{
+    formatDate(element.startDate)
+  }}</time>
+  -
+  <time dateTime="{{ formatDate(element.endDate) }}">{{
+    formatDate(element.endDate)
+  }}</time>
 </div>
-<div>{{ element.institution }}</div>
+<div>
+  <address>{{ element.institution }}<br />{{ element._city }}</address>
+  <footer>{{ element.studyType }}</footer>
+  <mat-chip-listbox *ngIf="element.courses.length > 0">
+    <mat-chip *ngFor="let course of element.courses">{{ course }}</mat-chip>
+  </mat-chip-listbox>
+</div>

@@ -9,6 +9,7 @@ import { EducationItemComponent } from './education/education-item/education-ite
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -30,9 +31,10 @@ import { FlipcardComponent } from './flipcard/flipcard.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
     MatIconModule,
     MatChipsModule,
-    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

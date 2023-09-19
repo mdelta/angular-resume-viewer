@@ -14,7 +14,7 @@ export class Education {
   constructor(item: any) {
     if (item.studyType) this.studyType = item.studyType;
     if (item.institution) this.institution = item.institution;
-    if (item._city) this._city = item._city;
+    if (item.url) this.url = item.url;
     if (item.courses) this.courses = JSON.parse(JSON.stringify(item.courses));
 
     if (item.startDate) {
@@ -28,5 +28,7 @@ export class Education {
     } else {
       this.endDate = new Date();
     }
+
+    if (item._city) this._city = item._city;
   }
 }

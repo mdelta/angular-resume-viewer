@@ -16,6 +16,8 @@
   --dark-gray-400: rgba(27, 31, 35, 0.35);
   --dark-gray-500: rgb(15, 15, 16);
 
+  --midnight-gray: #484749;
+
   /* Light */
 
   --body-background-light: var(--white);
@@ -25,7 +27,7 @@
   --primary-text-color-light: black;
 
   --secondary-color-light: red;
-  --secondary-background-color-light: var(--black);
+  --secondary-background-color-light: var(--midnight-gray);
   --secondary-text-color-light: var(--white);
 
   /* Dark */

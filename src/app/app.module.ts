@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { NameComponent } from './name/name.component';
 import { VcardComponent } from './vcard/vcard.component';
@@ -35,6 +37,8 @@ import { FlipcardComponent } from './flipcard/flipcard.component';
     MatButtonModule,
     MatIconModule,
     MatChipsModule,
+    MatCardModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

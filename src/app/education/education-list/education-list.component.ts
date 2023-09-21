@@ -8,21 +8,4 @@ import { Education } from '../../../model/education.model';
 })
 export class EducationListComponent {
   @Input() items!: Education[];
-
-  constructor() {}
-
-  ngOnInit() {
-    this.items.sort((a, b) => {
-      // sort descend by date
-      if (a.startDate && b.startDate) {
-        if (a.startDate > b.startDate) {
-          return -1;
-        } else {
-          return 1;
-        }
-      } else {
-        return 0;
-      }
-    });
-  }
 }

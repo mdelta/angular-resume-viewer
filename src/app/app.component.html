@@ -34,17 +34,20 @@
       <app-education [items]="educationData"></app-education>
     </section>
     <div id="rightcol">
-      <app-flipcard>
-        <div front>
-          <app-name
-            [name]="resumeData.basics.name"
-            [title]="resumeData.basics.label"
-          ></app-name>
-        </div>
-        <div back>
-          <app-vcard></app-vcard>
-        </div>
-      </app-flipcard>
+      <section id="profile-name">
+        <app-flipcard>
+          <div front>
+            <app-name
+              [name]="resumeData.basics.name"
+              [title]="resumeData.basics.label"
+            ></app-name>
+          </div>
+          <div back>
+            <app-vcard></app-vcard>
+          </div>
+        </app-flipcard>
+      </section>
+      <app-social></app-social>
     </div>
   </div>
 </main>

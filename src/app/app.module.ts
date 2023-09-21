@@ -18,6 +18,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { NameComponent } from './name/name.component';
 import { VcardComponent } from './vcard/vcard.component';
 import { FlipcardComponent } from './flipcard/flipcard.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SocialComponent } from './social/social.component';
+import { GithubComponent } from './social/github/github.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,8 @@ import { FlipcardComponent } from './flipcard/flipcard.component';
     NameComponent,
     VcardComponent,
     FlipcardComponent,
+    SocialComponent,
+    GithubComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +44,7 @@ import { FlipcardComponent } from './flipcard/flipcard.component';
     MatChipsModule,
     MatCardModule,
     MatDividerModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

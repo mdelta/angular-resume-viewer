@@ -16,6 +16,10 @@ footer {
   color: var(--secondary-text-color);
 }
 
+#profile-name {
+  max-height: 100px;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }

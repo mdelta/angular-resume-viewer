@@ -26,8 +26,11 @@
       },
       {
         "network": "GitHub",
-        "username": "mdelta",
         "url": "https://github.com/mdelta"
+      },
+      {
+        "network": "Credly",
+        "url": "https://www.credly.com/users/andreas-pieger/badges"
       }
     ]
   },

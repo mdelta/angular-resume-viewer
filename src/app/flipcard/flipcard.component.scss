@@ -1,11 +1,12 @@
-div {
+.container {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  min-height: 100px;
+  max-height: 300px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
-.container {
+.flip-card {
   position: relative;
   width: 100%;
   height: 100%;
@@ -13,15 +14,6 @@ div {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .back,

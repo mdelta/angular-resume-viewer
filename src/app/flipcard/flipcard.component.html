@@ -1,5 +1,5 @@
 <div class="container" (click)="flipEvent()">
-  <div class="card" [ngClass]="frontVisible ? '' : 'flipped'">
+  <div class="flip-card" [ngClass]="frontVisible ? '' : 'flipped'">
     <div class="front"><ng-content select="[front]"></ng-content></div>
     <div class="back"><ng-content select="[back]"></ng-content></div>
   </div>

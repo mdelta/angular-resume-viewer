@@ -30,6 +30,8 @@
   --secondary-background-color-light: var(--midnight-gray);
   --secondary-text-color-light: var(--white);
 
+  --social-icon-light: var(--white);
+
   /* Dark */
 
   --body-background-dark: var(--dark-gray-100);
@@ -42,6 +44,13 @@
 
   --secondary-background-color: var(--secondary-background-color-light);
   --secondary-text-color: var(--secondary-text-color-light);
+
+  --social-icon-color: var(--social-icon-light);
+  --myicon: var(--social-icon-light);
+}
+
+div {
+  color: var(--myicon);
 }
 
 @media (prefers-color-scheme: dark) {

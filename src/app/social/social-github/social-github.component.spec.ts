@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GithubComponent } from './github.component';
+import { SocialGithubComponent } from './social-github.component';
 
 describe('GithubComponent', () => {
-  let component: GithubComponent;
-  let fixture: ComponentFixture<GithubComponent>;
+  let component: SocialGithubComponent;
+  let fixture: ComponentFixture<SocialGithubComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GithubComponent ]
-    })
-    .compileComponents();
+      declarations: [SocialGithubComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(GithubComponent);
+    fixture = TestBed.createComponent(SocialGithubComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

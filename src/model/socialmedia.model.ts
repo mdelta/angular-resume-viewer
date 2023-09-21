@@ -1,20 +1,18 @@
-export class Education {
+export class SocialMedia {
   network: string = '';
   url: string = '';
   name: string = '';
 
-  icon: string = '';
-  iconProvider: '' | 'FontAwesome' | 'Material' = '';
+  iconComponent: '' | 'GitHub' = '';
 
   constructor(item: any) {
     if (item.network) this.network = item.network;
     if (item.url) this.url = item.url;
     if (item.name) this.url = item.name;
 
-    switch (this.name) {
+    switch (this.network) {
       case 'GitHub':
-        this.icon = 'fa-github';
-        this.iconProvider = 'FontAwesome';
+        this.iconComponent = 'GitHub';
         break;
     }
   }

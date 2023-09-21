@@ -20,7 +20,8 @@ import { VcardComponent } from './vcard/vcard.component';
 import { FlipcardComponent } from './flipcard/flipcard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SocialComponent } from './social/social.component';
-import { GithubComponent } from './social/github/github.component';
+import { SocialGithubComponent } from './social/social-github/social-github.component';
+import { SocialListComponent } from './social/social-list/social-list.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { GithubComponent } from './social/github/github.component';
     VcardComponent,
     FlipcardComponent,
     SocialComponent,
-    GithubComponent,
+    SocialGithubComponent,
+    SocialListComponent,
   ],
   imports: [
     BrowserModule,

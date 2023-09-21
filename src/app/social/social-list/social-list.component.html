@@ -1,0 +1,6 @@
+<span *ngFor="let item of items">
+  <app-social-github
+    *ngIf="item.iconComponent === 'GitHub'"
+    [url]="item.url"
+  ></app-social-github>
+</span>

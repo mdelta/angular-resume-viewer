@@ -1,18 +1,6 @@
 <span *ngFor="let item of items">
-  <app-social-github
-    *ngIf="item.iconComponent === 'GitHub'"
+  <app-social-item
     [url]="item.url"
-  ></app-social-github>
-  <app-social-linkedin
-    *ngIf="item.iconComponent === 'LinkedIn'"
-    [url]="item.url"
-  ></app-social-linkedin>
-  <app-social-xing
-    *ngIf="item.iconComponent === 'Xing'"
-    [url]="item.url"
-  ></app-social-xing>
-  <app-social-credly
-    *ngIf="item.iconComponent === 'Credly'"
-    [url]="item.url"
-  ></app-social-credly>
+    [icon]="item.iconComponent"
+  ></app-social-item>
 </span>

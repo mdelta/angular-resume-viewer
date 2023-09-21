@@ -1,9 +1,17 @@
+export enum SocialMediaProfiles {
+  None = '',
+  GitHub = 'GitHub',
+  LinkedIn = 'LinkedIn',
+  Xing = 'Xing',
+  Credly = 'Credly',
+}
+
 export class SocialMedia {
   network: string = '';
   url: string = '';
   name: string = '';
 
-  iconComponent: '' | 'GitHub' | 'LinkedIn' | 'Xing' | 'Credly' = '';
+  iconComponent: SocialMediaProfiles = SocialMediaProfiles.None;
 
   constructor(item: any) {
     if (item.network) this.network = item.network;
@@ -11,17 +19,17 @@ export class SocialMedia {
     if (item.name) this.url = item.name;
 
     switch (this.network) {
-      case 'GitHub':
-        this.iconComponent = 'GitHub';
+      case SocialMediaProfiles.GitHub:
+        this.iconComponent = SocialMediaProfiles.GitHub;
         break;
-      case 'LinkedIn':
-        this.iconComponent = 'LinkedIn';
+      case SocialMediaProfiles.LinkedIn:
+        this.iconComponent = SocialMediaProfiles.LinkedIn;
         break;
-      case 'Xing':
-        this.iconComponent = 'Xing';
+      case SocialMediaProfiles.Xing:
+        this.iconComponent = SocialMediaProfiles.Xing;
         break;
-      case 'Credly':
-        this.iconComponent = 'Credly';
+      case SocialMediaProfiles.Credly:
+        this.iconComponent = SocialMediaProfiles.Credly;
         break;
     }
   }

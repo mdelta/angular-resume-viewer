@@ -3,7 +3,7 @@ export class SocialMedia {
   url: string = '';
   name: string = '';
 
-  iconComponent: '' | 'GitHub' = '';
+  iconComponent: '' | 'GitHub' | 'LinkedIn' | 'Xing' | 'Credly' = '';
 
   constructor(item: any) {
     if (item.network) this.network = item.network;
@@ -13,6 +13,15 @@ export class SocialMedia {
     switch (this.network) {
       case 'GitHub':
         this.iconComponent = 'GitHub';
+        break;
+      case 'LinkedIn':
+        this.iconComponent = 'LinkedIn';
+        break;
+      case 'Xing':
+        this.iconComponent = 'Xing';
+        break;
+      case 'Credly':
+        this.iconComponent = 'Credly';
         break;
     }
   }

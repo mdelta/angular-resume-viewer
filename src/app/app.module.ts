@@ -22,6 +22,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SocialComponent } from './social/social.component';
 import { SocialGithubComponent } from './social/social-github/social-github.component';
 import { SocialListComponent } from './social/social-list/social-list.component';
+import { SocialLinkedinComponent } from './social/social-linkedin/social-linkedin.component';
+import { SocialXingComponent } from './social/social-xing/social-xing.component';
+import { SocialCredlyComponent } from './social/social-credly/social-credly.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { SocialListComponent } from './social/social-list/social-list.component'
     SocialComponent,
     SocialGithubComponent,
     SocialListComponent,
+    SocialLinkedinComponent,
+    SocialXingComponent,
+    SocialCredlyComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,5 +8,5 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 })
 export class SocialGithubComponent {
   @Input() url: string = '';
-  faGithub = faGithub;
+  icon = faGithub;
 }

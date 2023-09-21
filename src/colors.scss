@@ -31,6 +31,7 @@
   --secondary-text-color-light: var(--white);
 
   --social-icon-light: var(--white);
+  --social-icon-hover-light: var(--blue-100);
 
   /* Dark */
 
@@ -46,6 +47,7 @@
   --secondary-text-color: var(--secondary-text-color-light);
 
   --social-icon-color: var(--social-icon-light);
+  --social-icon-hover-color: var(--social-icon-hover-light);
 }
 
 @media (prefers-color-scheme: dark) {

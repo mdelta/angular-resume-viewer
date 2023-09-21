@@ -46,11 +46,6 @@
   --secondary-text-color: var(--secondary-text-color-light);
 
   --social-icon-color: var(--social-icon-light);
-  --myicon: var(--social-icon-light);
-}
-
-div {
-  color: var(--myicon);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,12 +1,6 @@
 import { Component, Input } from '@angular/core';
-import {
-  IconDefinition,
-  faGithub,
-  faLinkedin,
-  faXing,
-} from '@fortawesome/free-brands-svg-icons';
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { SocialMediaProfiles } from 'src/model/socialmedia.model';
 
 @Component({
   selector: 'app-social-item',
@@ -15,29 +9,19 @@ import { SocialMediaProfiles } from 'src/model/socialmedia.model';
 })
 export class SocialItemComponent {
   @Input() name: string = '';
+  @Input() network: string = '';
   @Input() url: string = '';
-  @Input() icon: SocialMediaProfiles = SocialMediaProfiles.None;
+  @Input() icon: IconDefinition = faLink;
 
-  faIcon: IconDefinition;
   title: string = '';
 
-  constructor() {
-    this.faIcon = faLink;
-  }
+  constructor() {}
 
   ngOnInit() {
     if (this.name !== '') {
-      this.title = `${this.name}, ${this.icon}`;
+      this.title = `${this.network}, ${this.name}`;
     } else {
-      this.title = this.icon;
-    }
-
-    if (this.icon === SocialMediaProfiles.GitHub) {
-      this.faIcon = faGithub;
-    } else if (this.icon === SocialMediaProfiles.LinkedIn) {
-      this.faIcon = faLinkedin;
-    } else if (this.icon === SocialMediaProfiles.Xing) {
-      this.faIcon = faXing;
+      this.title = this.network;
     }
   }
 }

@@ -1,6 +1,8 @@
 <span *ngFor="let item of items">
   <app-social-item
+    [network]="item.network"
+    [name]="item.profileName"
     [url]="item.url"
-    [icon]="item.iconComponent"
+    [icon]="item.faIcon"
   ></app-social-item>
 </span>

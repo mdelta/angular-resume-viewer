@@ -1,8 +1,10 @@
+import * as data from '../assets/resume.json';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Education } from 'src/model/education.model';
+import { Basics } from 'src/model/basics.model';
+import { Location } from 'src/model/location.model';
 import { SocialMedia } from 'src/model/socialmedia.model';
-import * as data from '../assets/resume.json';
+import { Education } from 'src/model/education.model';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,8 @@ export class AppComponent implements OnInit {
   title = 'ResumeViewer';
   resumeData = data;
 
+  basics: Basics = new Basics(this.resumeData.basics);
+  location: Location = new Location(this.resumeData.basics.location);
   socialProfiles: SocialMedia[] = [];
   educationData: Education[] = [];
 

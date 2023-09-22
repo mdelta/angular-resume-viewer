@@ -24,6 +24,10 @@ import { NameComponent } from './name/name.component';
 import { VcardComponent } from './vcard/vcard.component';
 import { FlipcardComponent } from './flipcard/flipcard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PersonalComponent } from './personal/personal.component';
+import { WorkComponent } from './work/work.component';
+import { WorkItemComponent } from './work/work-item/work-item.component';
+import { WorkListComponent } from './work/work-list/work-list.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SocialComponent,
     SocialListComponent,
     SocialItemComponent,
+    PersonalComponent,
+    WorkComponent,
+    WorkItemComponent,
+    WorkListComponent,
   ],
   imports: [
     BrowserModule,

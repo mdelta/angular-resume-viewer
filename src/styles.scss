@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import "colors.scss";
-@import "assets/css/fonts.scss";
-@import "material-icons/iconfont/material-icons.scss";
+@import 'colors.scss';
+@import 'colors-light.scss';
+@import 'colors-dark.scss';
+@import 'assets/css/fonts.scss';
+@import 'material-icons/iconfont/material-icons.scss';
 
 html,
 body {
@@ -10,6 +12,6 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   background-color: var(--background);
 }

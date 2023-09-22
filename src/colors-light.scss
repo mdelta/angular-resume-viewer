@@ -1,0 +1,31 @@
+* {
+  --body-background-light: var(--white);
+
+  --primary-color-light: blue;
+  --primary-background-color-light: white;
+  --primary-text-color-light: var(--black);
+  --primary-header-title-color-light: var(--black);
+
+  --secondary-color-light: red;
+  --secondary-background-color-light: var(--midnight-gray);
+  --secondary-text-color-light: var(--white);
+  --secondary-header-title-color-light: var(--dark-gray-100);
+
+  --social-icon-light: var(--white);
+  --social-icon-hover-light: var(--blue-100);
+}
+
+:root {
+  color-scheme: light;
+
+  --background: var(--body-background-light);
+
+  --primary-header-title-color: var(--primary-header-title-color-light);
+
+  --secondary-background-color: var(--secondary-background-color-light);
+  --secondary-text-color: var(--secondary-text-color-light);
+  --secondary-header-title-color: var(--secondary-header-title-color-light);
+
+  --social-icon-color: var(--social-icon-light);
+  --social-icon-hover-color: var(--social-icon-hover-light);
+}

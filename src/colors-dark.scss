@@ -1,0 +1,11 @@
+* {
+  --body-background-dark: var(--dark-gray-100);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --background: var(--body-background-dark);
+  }
+}

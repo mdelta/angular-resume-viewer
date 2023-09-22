@@ -17,7 +17,7 @@
           <button mat-icon-button aria-label="Button with menu icon">
             <mat-icon>menu</mat-icon>
           </button>
-          <span>{{ resumeData.basics.name }}</span>
+          <span>{{ basics.name }}</span>
           <span class="spacer"></span>
           <button mat-icon-button aria-label="Button with heart icon">
             <mat-icon>favorite</mat-icon>
@@ -38,7 +38,7 @@
         </app-flipcard>
       </section>
       <section id="profile-basics">
-        <app-personal></app-personal>
+        <app-personal [item]="basics" [location]="location"></app-personal>
         <app-social [items]="socialProfiles"></app-social>
       </section>
     </div>

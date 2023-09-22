@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./flipcard.component.scss'],
 })
 export class FlipcardComponent {
-  frontVisible: boolean = true;
+  frontVisible = true;
 
   flipEvent() {
     this.frontVisible = !this.frontVisible;

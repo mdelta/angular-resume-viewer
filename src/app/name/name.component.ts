@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./name.component.scss'],
 })
 export class NameComponent {
-  @Input() name: string = '';
-  @Input() title: string = '';
+  @Input() name = '';
+  @Input() title = '';
 }

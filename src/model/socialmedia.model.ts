@@ -1,8 +1,4 @@
-import {
-  faGithub,
-  faLinkedin,
-  faXing,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faXing } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 export enum SocialMediaProfiles {
@@ -14,9 +10,9 @@ export enum SocialMediaProfiles {
 }
 
 export class SocialMedia {
-  network: string = '';
-  url: string = '';
-  profileName: string = '';
+  network = '';
+  url = '';
+  profileName = '';
 
   iconComponent: SocialMediaProfiles = SocialMediaProfiles.None;
   faIcon = faLink;

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Education } from '../../model/education.model';
 
 @Component({
@@ -6,10 +6,8 @@ import { Education } from '../../model/education.model';
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
 })
-export class EducationComponent {
+export class EducationComponent implements OnInit {
   @Input() items!: Education[];
-
-  constructor() {}
 
   ngOnInit() {
     this.items.sort((a, b) => {

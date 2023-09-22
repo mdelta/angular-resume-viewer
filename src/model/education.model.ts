@@ -1,15 +1,15 @@
 export class Education {
-  institution: string = '';
-  url: string = '';
-  area: string = '';
-  studyType: string = '';
+  institution = '';
+  url = '';
+  area = '';
+  studyType = '';
   startDate: Date;
   endDate: Date;
-  score: number = 0;
+  score = 0;
   courses: string[] = [];
 
   // custom types
-  _city: string = '';
+  _city = '';
 
   constructor(item: any) {
     if (item.studyType) this.studyType = item.studyType;

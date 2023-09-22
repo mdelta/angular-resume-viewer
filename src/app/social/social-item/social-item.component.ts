@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,16 +7,13 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './social-item.component.html',
   styleUrls: ['./social-item.component.scss'],
 })
-export class SocialItemComponent {
-  @Input() name: string = '';
-  @Input() network: string = '';
-  @Input() url: string = '';
+export class SocialItemComponent implements OnInit {
+  @Input() name = '';
+  @Input() network = '';
+  @Input() url = '';
   @Input() icon: IconDefinition = faLink;
 
-  title: string = '';
-
-  constructor() {}
-
+  title = '';
   ngOnInit() {
     if (this.name !== '') {
       this.title = `${this.network}, ${this.name}`;

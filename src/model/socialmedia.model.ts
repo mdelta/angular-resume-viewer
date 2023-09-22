@@ -17,10 +17,13 @@ export class SocialMedia {
   iconComponent: SocialMediaProfiles = SocialMediaProfiles.None;
   faIcon = faLink;
 
-  constructor(item: any) {
-    if (item.network) this.network = item.network;
-    if (item.url) this.url = item.url;
-    if (item.username) this.profileName = item.username;
+  constructor(item: unknown) {
+    if (!item) throw new Error('No value given');
+    if (typeof item !== 'object') throw new Error('No object given');
+
+    if ('network' in item && typeof item.network === 'string') this.network = item.network;
+    if ('url' in item && typeof item.url === 'string') this.url = item.url;
+    if ('username' in item && typeof item.username === 'string') this.profileName = item.username;
 
     switch (this.network) {
       case SocialMediaProfiles.GitHub:

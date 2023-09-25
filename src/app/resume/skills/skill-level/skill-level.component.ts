@@ -15,6 +15,15 @@ export class SkillLevelComponent implements OnInit {
       case SkillLevel.None:
         this.cssClass = 'value__none';
         break;
+      case SkillLevel.Beginner:
+        this.cssClass = 'value__beginner';
+        break;
+      case SkillLevel.Average:
+        this.cssClass = 'value__average';
+        break;
+      case SkillLevel.Advanced:
+        this.cssClass = 'value__advanced';
+        break;
       case SkillLevel.Master:
         this.cssClass = 'value__master';
         break;

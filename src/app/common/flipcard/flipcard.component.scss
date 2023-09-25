@@ -1,9 +1,12 @@
 .container {
   background-color: transparent;
+  cursor: pointer;
+
   min-height: 100px;
   max-height: 300px;
   perspective: 1000px;
-  cursor: pointer;
+
+  padding: 8px;
 }
 
 .flip-card {

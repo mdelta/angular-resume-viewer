@@ -4,19 +4,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FlipcardComponent } from './flipcard/flipcard.component';
 
-import { NameComponent } from './name/name.component';
-import { PersonalComponent } from './personal/personal.component';
-import { SocialComponent } from './social/social.component';
-import { SocialListComponent } from './social/social-list/social-list.component';
-import { SocialItemComponent } from './social/social-item/social-item.component';
-import { EducationComponent } from './education/education.component';
-import { EducationListComponent } from './education/education-list/education-list.component';
-import { EducationItemComponent } from './education/education-item/education-item.component';
-import { WorkComponent } from './work/work.component';
-import { WorkItemComponent } from './work/work-item/work-item.component';
-import { WorkListComponent } from './work/work-list/work-list.component';
+import { FlipcardComponent } from './common/flipcard/flipcard.component';
+import { VcardComponent } from './common/vcard/vcard.component';
+
+import { NameComponent } from './resume/name/name.component';
+import { PersonalComponent } from './resume/personal/personal.component';
+import { SocialComponent } from './resume/social/social.component';
+import { SocialListComponent } from './resume/social/social-list/social-list.component';
+import { SocialItemComponent } from './resume/social/social-item/social-item.component';
+import { EducationComponent } from './resume/education/education.component';
+import { EducationListComponent } from './resume/education/education-list/education-list.component';
+import { EducationItemComponent } from './resume/education/education-item/education-item.component';
+import { WorkComponent } from './resume/work/work.component';
+import { WorkItemComponent } from './resume/work/work-item/work-item.component';
+import { WorkListComponent } from './resume/work/work-list/work-list.component';
+import { SkillsComponent } from './resume/skills/skills.component';
+import { SkillListComponent } from './resume/skills/skill-list/skill-list.component';
+import { SkillItemComponent } from './resume/skills/skill-item/skill-item.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -25,7 +30,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { VcardComponent } from './vcard/vcard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -44,6 +48,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     WorkComponent,
     WorkItemComponent,
     WorkListComponent,
+    SkillsComponent,
+    SkillListComponent,
+    SkillItemComponent,
   ],
   imports: [
     BrowserModule,

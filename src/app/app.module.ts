@@ -22,6 +22,7 @@ import { WorkListComponent } from './resume/work/work-list/work-list.component';
 import { SkillsComponent } from './resume/skills/skills.component';
 import { SkillListComponent } from './resume/skills/skill-list/skill-list.component';
 import { SkillItemComponent } from './resume/skills/skill-item/skill-item.component';
+import { SkillLevelComponent } from './resume/skills/skill-level/skill-level.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -51,6 +52,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SkillsComponent,
     SkillListComponent,
     SkillItemComponent,
+    SkillLevelComponent,
   ],
   imports: [
     BrowserModule,

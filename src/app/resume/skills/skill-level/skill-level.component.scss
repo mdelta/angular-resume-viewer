@@ -1,0 +1,55 @@
+.meter {
+  width: 100%;
+  background-color: #111;
+}
+
+.meter > .value__none {
+  height: 1em;
+  width: 0;
+  background-color: #2187e7;
+}
+
+.meter > .value__beginner {
+  height: 1em;
+  width: 20%;
+  background-color: #2187e7;
+
+  transform-origin: left;
+  animation: width-animation 2s ease normal;
+}
+
+.meter > .value__average {
+  height: 1em;
+  width: 50%;
+  background-color: #2187e7;
+
+  transform-origin: left;
+  animation: width-animation 2s ease normal;
+}
+
+.meter > .value__advanced {
+  height: 1em;
+  width: 80%;
+  background-color: #2187e7;
+
+  transform-origin: left;
+  animation: width-animation 2s ease normal;
+}
+
+.meter > .value__master {
+  height: 1em;
+  width: 100%;
+  background-color: #2187e7;
+
+  transform-origin: left;
+  animation: width-animation 2s ease normal;
+}
+
+@keyframes width-animation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

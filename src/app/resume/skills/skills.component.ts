@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Skill } from 'src/model/skill.model';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-
+  @Input() items!: Skill[];
 }

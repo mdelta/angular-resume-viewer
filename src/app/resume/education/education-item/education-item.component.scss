@@ -5,3 +5,14 @@
 .edu-card img {
   max-width: 100%;
 }
+
+@media screen and (max-width: 850px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .year {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+  }
+}

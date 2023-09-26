@@ -8,7 +8,7 @@ export enum SkillLevel {
 
 export class Skill {
   name = '';
-  level = '';
+  private level = '';
   levelType: SkillLevel = SkillLevel.None;
   keywords: string[] = [];
 
@@ -26,6 +26,15 @@ export class Skill {
     }
 
     switch (this.level) {
+      case 'Beginner':
+        this.levelType = SkillLevel.Beginner;
+        break;
+      case 'Average':
+        this.levelType = SkillLevel.Average;
+        break;
+      case 'Advanced':
+        this.levelType = SkillLevel.Advanced;
+        break;
       case 'Master':
         this.levelType = SkillLevel.Master;
         break;

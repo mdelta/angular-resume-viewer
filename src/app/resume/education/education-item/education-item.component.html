@@ -1,11 +1,13 @@
 <mat-card class="edu-card year">
-  <mat-card-title
-    ><time dateTime="{{ formatDate(element.startDate) }}">{{ formatDate(element.startDate) }}</time>
+  <mat-card-title>
+    <time dateTime="{{ element.startDate | date : 'yyyy' }}">
+      {{ element.startDate | date : 'yyyy' }}
+    </time>
     -
-    <time dateTime="{{ formatDate(element.endDate) }}">{{
-      formatDate(element.endDate)
-    }}</time></mat-card-title
-  >
+    <time dateTime="{{ element.endDate | date : 'yyyy' }}">
+      {{ element.endDate | date : 'yyyy' }}
+    </time>
+  </mat-card-title>
 </mat-card>
 <mat-card class="edu-card">
   <mat-card-subtitle>{{ element.studyType }}</mat-card-subtitle>

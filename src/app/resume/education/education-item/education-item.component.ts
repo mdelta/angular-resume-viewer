@@ -8,10 +8,4 @@ import { Education } from '../../../../model/education.model';
 })
 export class EducationItemComponent {
   @Input() element!: Education;
-
-  formatDate(date: Date): string {
-    const year = date.getFullYear();
-
-    return `${year}`;
-  }
 }

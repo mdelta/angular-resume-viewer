@@ -1,4 +1,3 @@
-import * as data from '../../assets/resume.json';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Basics } from 'src/model/basics.model';
@@ -6,6 +5,7 @@ import { Location } from 'src/model/location.model';
 import { SocialMedia } from 'src/model/socialmedia.model';
 import { Education } from 'src/model/education.model';
 import { Skill } from 'src/model/skill.model';
+import { ResumeService } from '../services/resume.service';
 
 @Component({
   selector: 'app-resume',
@@ -13,32 +13,15 @@ import { Skill } from 'src/model/skill.model';
   styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-  resumeData = data;
+  basics: Basics = this.resumeService.basics;
+  location: Location = this.resumeService.location;
+  socialProfiles: SocialMedia[] = this.resumeService.socialProfiles;
+  educationData: Education[] = this.resumeService.educationData;
+  skillData: Skill[] = this.resumeService.skillData;
 
-  basics: Basics = new Basics(this.resumeData.basics);
-  location: Location = new Location(this.resumeData.basics.location);
-  socialProfiles: SocialMedia[] = [];
-  educationData: Education[] = [];
-  skillData: Skill[] = [];
-
-  constructor(private readonly titleService: Title) {}
+  constructor(private readonly titleService: Title, private readonly resumeService: ResumeService) {}
 
   ngOnInit() {
-    this.titleService.setTitle(`${this.resumeData.basics.name}, Lebenslauf`);
-
-    for (const item of this.resumeData.basics.profiles) {
-      const social = new SocialMedia(item);
-      this.socialProfiles.push(social);
-    }
-
-    for (const item of this.resumeData.education) {
-      const education = new Education(item);
-      this.educationData.push(education);
-    }
-
-    for (const item of this.resumeData.skills) {
-      const skill = new Skill(item);
-      this.skillData.push(skill);
-    }
+    this.titleService.setTitle(`${this.basics.name}, Lebenslauf`);
   }
 }

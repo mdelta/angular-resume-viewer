@@ -93,7 +93,7 @@
     {
       "name": "Programming",
       "level": "Master",
-      "keywords": ["C++", "COBOL", "Git"]
+      "keywords": ["C++", "COBOL"]
     },
     {
       "name": "Frontend Development",
@@ -116,6 +116,11 @@
       "keywords": ["MongoDB"]
     },
     {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Git", "Branching", "GitLab"]
+    },
+    {
       "name": "Container",
       "level": "Average",
       "keywords": ["Kubernetes", "Docker", "Docker Compose"]
@@ -131,9 +136,14 @@
       "keywords": ["Ausbildung", "Weiterbildung", "Fortbildung"]
     },
     {
-      "name": "Office",
+      "name": "Microsoft Office",
       "level": "Master",
-      "keywords": ["Word", "Excel", "PowerPoint"]
+      "keywords": ["Word", "Excel", "PowerPoint", "SharePoint", "OneDrive"]
+    },
+    {
+      "name": "Atlassian",
+      "level": "Advanced",
+      "keywords": ["Confluence", "Jira", "ServiceDesk"]
     }
   ],
   "languages": [

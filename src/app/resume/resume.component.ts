@@ -1,0 +1,44 @@
+import * as data from '../../assets/resume.json';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { Basics } from 'src/model/basics.model';
+import { Location } from 'src/model/location.model';
+import { SocialMedia } from 'src/model/socialmedia.model';
+import { Education } from 'src/model/education.model';
+import { Skill } from 'src/model/skill.model';
+
+@Component({
+  selector: 'app-resume',
+  templateUrl: './resume.component.html',
+  styleUrls: ['./resume.component.scss'],
+})
+export class ResumeComponent implements OnInit {
+  resumeData = data;
+
+  basics: Basics = new Basics(this.resumeData.basics);
+  location: Location = new Location(this.resumeData.basics.location);
+  socialProfiles: SocialMedia[] = [];
+  educationData: Education[] = [];
+  skillData: Skill[] = [];
+
+  constructor(private readonly titleService: Title) {}
+
+  ngOnInit() {
+    this.titleService.setTitle(`${this.resumeData.basics.name}, Lebenslauf`);
+
+    for (const item of this.resumeData.basics.profiles) {
+      const social = new SocialMedia(item);
+      this.socialProfiles.push(social);
+    }
+
+    for (const item of this.resumeData.education) {
+      const education = new Education(item);
+      this.educationData.push(education);
+    }
+
+    for (const item of this.resumeData.skills) {
+      const skill = new Skill(item);
+      this.skillData.push(skill);
+    }
+  }
+}

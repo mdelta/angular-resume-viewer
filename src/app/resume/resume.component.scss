@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#rightcol {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+}
+
+#rightcol > section {
+  margin-top: 10px;
+}
+
+#profile-name {
+  max-height: 100px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

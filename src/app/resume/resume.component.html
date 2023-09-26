@@ -1,0 +1,45 @@
+<div class="grid-container">
+  <div>
+    <section id="profile-summary">
+      <p>{{ basics.summary }}</p>
+    </section>
+    <section id="work">
+      <app-work></app-work>
+    </section>
+    <section id="education">
+      <app-education [items]="educationData"></app-education>
+    </section>
+  </div>
+  <div id="rightcol">
+    <nav id="navigation">
+      <mat-toolbar color="primary">
+        <button mat-icon-button aria-label="Button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>{{ basics.name }}</span>
+        <span class="spacer"></span>
+        <button mat-icon-button aria-label="Button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar>
+    </nav>
+    <section id="profile-name">
+      <app-flipcard>
+        <div front>
+          <app-name [name]="basics.name" [title]="basics.label"></app-name>
+        </div>
+        <div back>
+          <app-vcard></app-vcard>
+        </div>
+      </app-flipcard>
+    </section>
+    <app-social [items]="socialProfiles"></app-social>
+    <section id="profile-basics">
+      <app-personal [item]="basics" [location]="location"></app-personal>
+      <app-skills [items]="skillData"></app-skills>
+    </section>
+  </div>
+</div>

@@ -32,6 +32,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SkillListComponent,
     SkillItemComponent,
     SkillLevelComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,

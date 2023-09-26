@@ -91,14 +91,49 @@
   "publications": [{}],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "Programming",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": ["C++", "COBOL", "Git"]
     },
     {
-      "name": "Compression",
+      "name": "Frontend Development",
+      "level": "Advanced",
+      "keywords": ["HTML", "CSS", "PHP", "Javascript", "TypeScript", "Angular"]
+    },
+    {
+      "name": "Backend Development",
       "level": "Master",
-      "keywords": ["Mpeg", "MP4", "GIF"]
+      "keywords": ["API", "REST", "NestJS", "Python", "Flask"]
+    },
+    {
+      "name": "Relational Databases",
+      "level": "Master",
+      "keywords": ["DB2", "Oracle", "PostgreSQL", "Index", "View", "SQL"]
+    },
+    {
+      "name": "NoSQL Databases",
+      "level": "Beginner",
+      "keywords": ["MongoDB"]
+    },
+    {
+      "name": "Container",
+      "level": "Average",
+      "keywords": ["Kubernetes", "Docker", "Docker Compose"]
+    },
+    {
+      "name": "Agile",
+      "level": "Average",
+      "keywords": ["Scrum"]
+    },
+    {
+      "name": "Trainer",
+      "level": "Master",
+      "keywords": ["Ausbildung", "Weiterbildung", "Fortbildung"]
+    },
+    {
+      "name": "Office",
+      "level": "Master",
+      "keywords": ["Word", "Excel", "PowerPoint"]
     }
   ],
   "languages": [
@@ -143,7 +178,7 @@
       "keywords": ["GoogleMaps", "Chrome Extension", "Javascript"],
       "startDate": "2016-08-24",
       "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
+      "url": "https://missdirection.example.com",
       "roles": ["Team lead", "Designer"],
       "entity": "Smoogle",
       "type": "application"

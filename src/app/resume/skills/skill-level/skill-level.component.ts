@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SkillLevel } from 'src/model/skill.model';
 
 @Component({
@@ -6,27 +6,7 @@ import { SkillLevel } from 'src/model/skill.model';
   templateUrl: './skill-level.component.html',
   styleUrls: ['./skill-level.component.scss'],
 })
-export class SkillLevelComponent implements OnInit {
+export class SkillLevelComponent {
+  SkillLevel = SkillLevel;
   @Input() level: SkillLevel = SkillLevel.None;
-  cssClass = '';
-
-  ngOnInit() {
-    switch (this.level) {
-      case SkillLevel.None:
-        this.cssClass = 'value__none';
-        break;
-      case SkillLevel.Beginner:
-        this.cssClass = 'value__beginner';
-        break;
-      case SkillLevel.Average:
-        this.cssClass = 'value__average';
-        break;
-      case SkillLevel.Advanced:
-        this.cssClass = 'value__advanced';
-        break;
-      case SkillLevel.Master:
-        this.cssClass = 'value__master';
-        break;
-    }
-  }
 }

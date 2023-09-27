@@ -33,6 +33,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ResumeComponent } from './resume/resume.component';
+import { MeterComponent } from './common/meter/meter.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ResumeComponent } from './resume/resume.component';
     SkillItemComponent,
     SkillLevelComponent,
     ResumeComponent,
+    MeterComponent,
   ],
   imports: [
     BrowserModule,

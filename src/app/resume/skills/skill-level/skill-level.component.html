@@ -1,3 +1,6 @@
-<div class="meter">
-  <div [ngClass]="cssClass"></div>
-</div>
+<ng-container [ngSwitch]="level">
+  <app-meter *ngSwitchCase="SkillLevel.Beginner" [width]="20" [colorClass]="'green'"></app-meter>
+  <app-meter *ngSwitchCase="SkillLevel.Average" [width]="50" [colorClass]="'green'"></app-meter>
+  <app-meter *ngSwitchCase="SkillLevel.Advanced" [width]="80" [colorClass]="'green'"></app-meter>
+  <app-meter *ngSwitchCase="SkillLevel.Master" [width]="100" [colorClass]="'green'"></app-meter>
+</ng-container>

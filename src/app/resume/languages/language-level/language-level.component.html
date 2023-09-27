@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="level">
+  <app-meter *ngSwitchCase="LanguageLevel.Fluent" [width]="80" [colorClass]="'green'"></app-meter>
+  <app-meter *ngSwitchCase="LanguageLevel.Native" [width]="100" [colorClass]="'green'"></app-meter>
+</ng-container>

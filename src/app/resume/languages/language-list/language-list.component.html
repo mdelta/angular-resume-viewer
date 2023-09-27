@@ -1,0 +1,4 @@
+<div *ngFor="let language of items" class="grid-container">
+  <div>{{ language.name }}</div>
+  <div><app-language-level [level]="language.levelType"></app-language-level></div>
+</div>

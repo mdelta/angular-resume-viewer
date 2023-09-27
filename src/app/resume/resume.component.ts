@@ -6,6 +6,7 @@ import { SocialMediaModel } from 'src/model/socialmedia.model';
 import { EducationModel } from 'src/model/education.model';
 import { SkillModel } from 'src/model/skill.model';
 import { ResumeService } from '../services/resume.service';
+import { LanguageModel } from 'src/model/language.model';
 
 @Component({
   selector: 'app-resume',
@@ -18,6 +19,7 @@ export class ResumeComponent implements OnInit {
   socialProfiles: SocialMediaModel[] = this.resumeService.socialProfiles;
   educationData: EducationModel[] = this.resumeService.educationData;
   skillData: SkillModel[] = this.resumeService.skillData;
+  languageData: LanguageModel[] = this.resumeService.languageData;
 
   constructor(private readonly titleService: Title, private readonly resumeService: ResumeService) {}
 

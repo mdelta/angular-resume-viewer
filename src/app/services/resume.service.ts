@@ -5,6 +5,7 @@ import { LocationModel } from 'src/model/location.model';
 import { SocialMediaModel } from 'src/model/socialmedia.model';
 import { EducationModel } from 'src/model/education.model';
 import { SkillModel } from 'src/model/skill.model';
+import { LanguageModel } from 'src/model/language.model';
 
 @Injectable({
   providedIn: 'root',
@@ -16,6 +17,7 @@ export class ResumeService {
   socialProfiles: SocialMediaModel[] = [];
   educationData: EducationModel[] = [];
   skillData: SkillModel[] = [];
+  languageData: LanguageModel[] = [];
 
   constructor() {
     for (const item of this.resumeData.basics.profiles) {
@@ -31,6 +33,11 @@ export class ResumeService {
     for (const item of this.resumeData.skills) {
       const skill = new SkillModel(item);
       this.skillData.push(skill);
+    }
+
+    for (const item of this.resumeData.languages) {
+      const language = new LanguageModel(item);
+      this.languageData.push(language);
     }
   }
 }

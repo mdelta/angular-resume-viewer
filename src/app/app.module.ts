@@ -23,6 +23,9 @@ import { SkillsComponent } from './resume/skills/skills.component';
 import { SkillListComponent } from './resume/skills/skill-list/skill-list.component';
 import { SkillItemComponent } from './resume/skills/skill-item/skill-item.component';
 import { SkillLevelComponent } from './resume/skills/skill-level/skill-level.component';
+import { LanguagesComponent } from './resume/languages/languages.component';
+import { LanguageItemComponent } from './resume/languages/language-item/language-item.component';
+import { LanguageLevelComponent } from './resume/languages/language-level/language-level.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -34,6 +37,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ResumeComponent } from './resume/resume.component';
 import { MeterComponent } from './common/meter/meter.component';
+import { LanguageListComponent } from './resume/languages/language-list/language-list.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +61,10 @@ import { MeterComponent } from './common/meter/meter.component';
     SkillLevelComponent,
     ResumeComponent,
     MeterComponent,
+    LanguagesComponent,
+    LanguageItemComponent,
+    LanguageLevelComponent,
+    LanguageListComponent,
   ],
   imports: [
     BrowserModule,

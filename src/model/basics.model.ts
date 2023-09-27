@@ -1,4 +1,4 @@
-export class Basics {
+export class BasicsModel {
   name = '';
   label = '';
   image = '';

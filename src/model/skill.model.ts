@@ -6,7 +6,7 @@ export enum SkillLevel {
   Master,
 }
 
-export class Skill {
+export class SkillModel {
   name = '';
   private level = '';
   levelType: SkillLevel = SkillLevel.None;

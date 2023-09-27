@@ -9,7 +9,7 @@ export enum SocialMediaProfiles {
   Credly = 'Credly',
 }
 
-export class SocialMedia {
+export class SocialMediaModel {
   network = '';
   url = '';
   profileName = '';

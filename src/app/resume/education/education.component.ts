@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Education } from '../../../model/education.model';
+import { EducationModel } from '../../../model/education.model';
 
 @Component({
   selector: 'app-education',
@@ -7,7 +7,7 @@ import { Education } from '../../../model/education.model';
   styleUrls: ['./education.component.scss'],
 })
 export class EducationComponent implements OnInit {
-  @Input() items!: Education[];
+  @Input() items!: EducationModel[];
 
   ngOnInit() {
     this.items.sort((a, b) => {

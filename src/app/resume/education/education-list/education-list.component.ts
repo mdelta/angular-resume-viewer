@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Education } from '../../../../model/education.model';
+import { EducationModel } from '../../../../model/education.model';
 
 @Component({
   selector: 'app-education-list',
@@ -7,5 +7,5 @@ import { Education } from '../../../../model/education.model';
   styleUrls: ['./education-list.component.scss'],
 })
 export class EducationListComponent {
-  @Input() items!: Education[];
+  @Input() items!: EducationModel[];
 }

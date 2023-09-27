@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SocialMedia } from 'src/model/socialmedia.model';
+import { SocialMediaModel } from 'src/model/socialmedia.model';
 
 @Component({
   selector: 'app-social-list',
@@ -7,5 +7,5 @@ import { SocialMedia } from 'src/model/socialmedia.model';
   styleUrls: ['./social-list.component.scss'],
 })
 export class SocialListComponent {
-  @Input() items!: SocialMedia[];
+  @Input() items!: SocialMediaModel[];
 }

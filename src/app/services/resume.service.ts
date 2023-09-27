@@ -1,35 +1,35 @@
 import * as data from '../../assets/resume.json';
 import { Injectable } from '@angular/core';
-import { Basics } from 'src/model/basics.model';
-import { Location } from 'src/model/location.model';
-import { SocialMedia } from 'src/model/socialmedia.model';
-import { Education } from 'src/model/education.model';
-import { Skill } from 'src/model/skill.model';
+import { BasicsModel } from 'src/model/basics.model';
+import { LocationModel } from 'src/model/location.model';
+import { SocialMediaModel } from 'src/model/socialmedia.model';
+import { EducationModel } from 'src/model/education.model';
+import { SkillModel } from 'src/model/skill.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ResumeService {
   resumeData = data;
-  basics: Basics = new Basics(this.resumeData.basics);
-  location: Location = new Location(this.resumeData.basics.location);
-  socialProfiles: SocialMedia[] = [];
-  educationData: Education[] = [];
-  skillData: Skill[] = [];
+  basics: BasicsModel = new BasicsModel(this.resumeData.basics);
+  location: LocationModel = new LocationModel(this.resumeData.basics.location);
+  socialProfiles: SocialMediaModel[] = [];
+  educationData: EducationModel[] = [];
+  skillData: SkillModel[] = [];
 
   constructor() {
     for (const item of this.resumeData.basics.profiles) {
-      const social = new SocialMedia(item);
+      const social = new SocialMediaModel(item);
       this.socialProfiles.push(social);
     }
 
     for (const item of this.resumeData.education) {
-      const education = new Education(item);
+      const education = new EducationModel(item);
       this.educationData.push(education);
     }
 
     for (const item of this.resumeData.skills) {
-      const skill = new Skill(item);
+      const skill = new SkillModel(item);
       this.skillData.push(skill);
     }
   }

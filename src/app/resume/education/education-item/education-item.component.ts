@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Education } from '../../../../model/education.model';
+import { EducationModel } from '../../../../model/education.model';
 
 @Component({
   selector: 'app-education-item',
@@ -7,5 +7,5 @@ import { Education } from '../../../../model/education.model';
   styleUrls: ['./education-item.component.scss'],
 })
 export class EducationItemComponent {
-  @Input() element!: Education;
+  @Input() element!: EducationModel;
 }

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Basics } from 'src/model/basics.model';
-import { Location } from 'src/model/location.model';
-import { SocialMedia } from 'src/model/socialmedia.model';
-import { Education } from 'src/model/education.model';
-import { Skill } from 'src/model/skill.model';
+import { BasicsModel } from 'src/model/basics.model';
+import { LocationModel } from 'src/model/location.model';
+import { SocialMediaModel } from 'src/model/socialmedia.model';
+import { EducationModel } from 'src/model/education.model';
+import { SkillModel } from 'src/model/skill.model';
 import { ResumeService } from '../services/resume.service';
 
 @Component({
@@ -13,11 +13,11 @@ import { ResumeService } from '../services/resume.service';
   styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-  basics: Basics = this.resumeService.basics;
-  location: Location = this.resumeService.location;
-  socialProfiles: SocialMedia[] = this.resumeService.socialProfiles;
-  educationData: Education[] = this.resumeService.educationData;
-  skillData: Skill[] = this.resumeService.skillData;
+  basics: BasicsModel = this.resumeService.basics;
+  location: LocationModel = this.resumeService.location;
+  socialProfiles: SocialMediaModel[] = this.resumeService.socialProfiles;
+  educationData: EducationModel[] = this.resumeService.educationData;
+  skillData: SkillModel[] = this.resumeService.skillData;
 
   constructor(private readonly titleService: Title, private readonly resumeService: ResumeService) {}
 

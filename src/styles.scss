@@ -14,4 +14,12 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   background-color: var(--background);
+
+  background-image: url('assets/louis-maniquet-71QXQUSC_Do-unsplash_sized.jpg');
+  backdrop-filter: blur(1.5px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

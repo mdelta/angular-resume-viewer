@@ -31,6 +31,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LanguageListComponent } from './languages/language-list/language-list.component';
 import { MyCommonModule } from '../common/mycommon.module';
 import { ResumeComponent } from './resume.component';
+import { ResumeService } from './resume.service';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { ResumeComponent } from './resume.component';
     MatDividerModule,
     FontAwesomeModule,
   ],
+  providers: [ResumeService],
   exports: [ResumeComponent],
 })
 export class ResumeModule {}

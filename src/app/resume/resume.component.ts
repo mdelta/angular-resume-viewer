@@ -5,7 +5,7 @@ import { LocationModel } from 'src/model/location.model';
 import { SocialMediaModel } from 'src/model/socialmedia.model';
 import { EducationModel } from 'src/model/education.model';
 import { SkillModel } from 'src/model/skill.model';
-import { ResumeService } from '../services/resume.service';
+import { ResumeService } from './resume.service';
 import { LanguageModel } from 'src/model/language.model';
 
 @Component({

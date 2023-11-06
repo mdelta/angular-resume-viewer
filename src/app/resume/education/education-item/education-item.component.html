@@ -1,5 +1,7 @@
 <mat-card class="edu-card year">
   <mat-card-title>
+    <mat-card-subtitle>{{ element.studyType }}</mat-card-subtitle>
+    <span>{{ element.institution }}:</span>
     <time dateTime="{{ element.startDate | date : 'yyyy' }}">
       {{ element.startDate | date : 'yyyy' }}
     </time>
@@ -8,10 +10,6 @@
       {{ element.endDate | date : 'yyyy' }}
     </time>
   </mat-card-title>
-</mat-card>
-<mat-card class="edu-card">
-  <mat-card-subtitle>{{ element.studyType }}</mat-card-subtitle>
-  <mat-card-title>{{ element.institution }}</mat-card-title>
   <!-- <img
     mat-card-image
     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
@@ -19,12 +17,11 @@
   /> -->
   <mat-card-content>
     <address>{{ element.institution }}<br />{{ element._city }}</address>
-    <footer></footer>
     <mat-chip-listbox *ngIf="element.courses.length > 0">
       <mat-chip *ngFor="let course of element.courses">{{ course }}</mat-chip>
     </mat-chip-listbox>
   </mat-card-content>
-  <mat-divider></mat-divider>
+
   <mat-card-actions *ngIf="element.url">
     <a mat-button href="{{ element.url }}">URL</a>
   </mat-card-actions>

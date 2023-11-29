@@ -7,6 +7,7 @@ import { EducationModel } from 'src/model/education.model';
 import { SkillModel } from 'src/model/skill.model';
 import { ResumeService } from './resume.service';
 import { LanguageModel } from 'src/model/language.model';
+import { WorkModel } from 'src/model/work.model';
 
 @Component({
   selector: 'app-resume',
@@ -18,6 +19,7 @@ export class ResumeComponent implements OnInit {
   location: LocationModel = this.resumeService.location;
   socialProfiles: SocialMediaModel[] = this.resumeService.socialProfiles;
   educationData: EducationModel[] = this.resumeService.educationData;
+  workData: WorkModel[] = this.resumeService.workData;
   skillData: SkillModel[] = this.resumeService.skillData;
   languageData: LanguageModel[] = this.resumeService.languageData;
 

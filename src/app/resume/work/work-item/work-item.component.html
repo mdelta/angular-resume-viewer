@@ -1,1 +1,23 @@
-<p>work-item works!</p>
+<mat-card class="edu-card year">
+  <mat-card-title>
+    <mat-card-subtitle>{{ element.name }}</mat-card-subtitle>
+    <span>{{ element.position }}:</span>
+    <time dateTime="{{ element.startDate | date : 'yyyy-MM-dd' }}">
+      {{ element.startDate | date : 'MMMM yyyy' }}
+    </time>
+    -
+    <time dateTime="{{ element.endDate | date : 'yyyy-MM-dd' }}">
+      {{ element.endDate | date : 'MMMM yyyy' }}
+    </time>
+  </mat-card-title>
+  <!-- <img
+    mat-card-image
+    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+    alt="Photo of a Shiba Inu"
+  /> -->
+  <mat-card-content> </mat-card-content>
+
+  <mat-card-actions *ngIf="element.url">
+    <a mat-button href="{{ element.url }}">URL</a>
+  </mat-card-actions>
+</mat-card>

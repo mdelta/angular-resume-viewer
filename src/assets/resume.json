@@ -36,19 +36,26 @@
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
+      "name": "ThyssenKrupp Steel AG",
+      "location": "Duisburg, Germany",
+      "description": "Ausbildung zum Fachinformatiker - Anwendungsentwicklung in verschiedenen Abteilungen.",
+      "position": "Fachinformatiker Anwendungssentwicklung",
+      "url": "https://www.epg.com/",
+      "startDate": "2004-09-01",
+      "endDate": "2007-02-28",
+      "summary": "TODO",
+      "highlights": ["K1", "K2", "K3"]
+    },
+    {
+      "name": "Ehrhardt+Partner Group",
+      "location": "Boppard-Buchholz, Germany",
       "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
+      "position": "Software Developer",
+      "url": "https://www.epg.com/",
+      "startDate": "2007-03-01",
+      "endDate": "2011-11-30",
+      "summary": "TODO",
+      "highlights": ["K1", "K2", "K3"]
     }
   ],
   "volunteer": [
@@ -84,7 +91,7 @@
       "studyType": "Allgemeine Fachhochschulreife",
       "startDate": "2000",
       "endDate": "2003",
-      "courses": ["Mathematik", "Informatik"]
+      "courses": ["Mathematik*", "Informatik*", "BWL", "Englisch"]
     }
   ],
   "awards": [{}],

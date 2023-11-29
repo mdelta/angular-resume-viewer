@@ -1,0 +1,13 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  backdrop-filter: blur(3.2px);
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 850px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

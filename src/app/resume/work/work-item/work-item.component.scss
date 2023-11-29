@@ -1,0 +1,15 @@
+mat-card {
+  margin: 4px;
+  padding: 4px;
+}
+
+@media screen and (max-width: 850px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  mat-card {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+  }
+}

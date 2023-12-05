@@ -11,13 +11,13 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v3
       with:
-        node-version: 16.14.x
+        node-version: 16.20.x
         cache: npm
     - name: Install
       run: npm install
     - name: Build
       run: npm run build
-    - name: copy file via ssh key
+    - name: Copy file via SSH
       uses: appleboy/scp-action@master
       with:
         HOST: ${{ secrets.SSH_SERVER }}

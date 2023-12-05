@@ -8,4 +8,8 @@ import { SkillModel } from 'src/model/skill.model';
 })
 export class SkillListComponent {
   @Input() items!: SkillModel[];
+
+  formatSkills(list: string[]): string {
+    return list.join(', ');
+  }
 }

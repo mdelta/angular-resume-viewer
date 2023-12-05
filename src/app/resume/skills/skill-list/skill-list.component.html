@@ -1,4 +1,4 @@
 <div *ngFor="let skill of items" class="grid-container">
-  <div>{{ skill.name }}</div>
+  <div [matTooltip]="formatSkills(skill.keywords)" matTooltipPosition="right">{{ skill.name }}</div>
   <div><app-skill-level [level]="skill.levelType"></app-skill-level></div>
 </div>

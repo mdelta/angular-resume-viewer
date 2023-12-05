@@ -1,12 +1,15 @@
 <nav id="navigation">
   <ul class="list">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a mat-flat-button color="accent" href="/home" routerLinkActive="active">Home</a></li>
+    <li><a mat-flat-button color="accent" href="/cv" routerLinkActive="active">Lebenslauf</a></li>
+    <li class="spacer"></li>
+    <li>
+      <a mat-flat-button color="accent" href="/impressum" routerLinkActive="active"
+        >Impressum und Datenschutz</a
+      >
+    </li>
   </ul>
 </nav>
 <main>
-  <app-resume></app-resume>
+  <router-outlet></router-outlet>
 </main>
-<footer></footer>

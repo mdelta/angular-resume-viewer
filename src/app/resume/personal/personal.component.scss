@@ -14,3 +14,17 @@ h2 {
 section {
   padding: 8px;
 }
+
+a {
+  color: var(--theme-ice);
+  text-decoration: none;
+  padding: 2px;
+}
+
+a:hover {
+  background-color: var(--theme-ice);
+  border-color: var(--theme-ice);
+  color: var(--social-icon-text-color);
+  transition: all 0.5s ease;
+  border-radius: 3px;
+}

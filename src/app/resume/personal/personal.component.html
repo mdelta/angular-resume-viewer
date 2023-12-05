@@ -6,6 +6,13 @@
   </p>
 </section>
 <section>
-  <h2>Address</h2>
-  <address>asd</address>
+  <h2>Adresse</h2>
+  <address>
+    <a
+      href="https://www.google.com/maps/@?api=1&map_action=map&{{ location.city }}+{{
+        location.countryCode
+      }}"
+      >{{ location.city }}</a
+    >, {{ location.countryCode }}
+  </address>
 </section>

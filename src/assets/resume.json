@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Andreas Pieger",
-    "label": "Software Developer",
+    "label": "Software Developer, Ausbilder, Trainer, Scrum Master",
+    "summary": "",
     "image": "",
     "email": "linkedin@vantero.de",
     "phone": "+49 xxx xxxxx",
     "url": "http://andreas.pieger.online/cv",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
       "postalCode": "56281",
       "city": "Emmelshausen",
@@ -37,25 +37,68 @@
   "work": [
     {
       "name": "ThyssenKrupp Steel AG",
+      "position": "Fachinformatiker Anwendungssentwicklung",
       "location": "Duisburg, Germany",
       "description": "Ausbildung zum Fachinformatiker - Anwendungsentwicklung in verschiedenen Abteilungen.",
-      "position": "Fachinformatiker Anwendungssentwicklung",
-      "url": "https://www.epg.com/",
+      "url": "https://www.thyssenkrupp-steel.com/",
       "startDate": "2004-09-01",
       "endDate": "2007-02-28",
-      "summary": "TODO",
-      "highlights": ["K1", "K2", "K3"]
+      "summary": "",
+      "highlights": ["PHP", "HTML", "Java", "Model-Driven-Architecture"]
     },
     {
       "name": "Ehrhardt+Partner Group",
-      "location": "Boppard-Buchholz, Germany",
-      "description": "Awesome compression company",
       "position": "Software Developer",
+      "location": "Boppard-Buchholz, Germany",
+      "description": "Weiterentwicklung der Hauseigenen Software. Konzeptionieren und Programmieren von kundenspezifischen Lösungen. Inbetriebnahme beim Kunden.",
       "url": "https://www.epg.com/",
       "startDate": "2007-03-01",
       "endDate": "2011-11-30",
-      "summary": "TODO",
-      "highlights": ["K1", "K2", "K3"]
+      "summary": "",
+      "highlights": ["COBOL", "Kundenprojekte"]
+    },
+    {
+      "name": "Ehrhardt+Partner Group",
+      "position": "Trainer Software Development",
+      "location": "Boppard-Buchholz, Germany",
+      "description": "Ausbildung der Fachinformatiker-Anwendungsentwicklung in Vollzeit. Aufbau eines Schulungskonzepts und der Schulungsumgebung für unsere Auszubildenden.",
+      "url": "https://www.epg.com/",
+      "startDate": "2011-12-01",
+      "endDate": "2015-12-31",
+      "summary": "",
+      "highlights": ["COBOL", "Datenbank", "SQL", "Ausbilder"]
+    },
+    {
+      "name": "Ehrhardt+Partner Group",
+      "position": "Expert Trainer Software Development",
+      "location": "Boppard-Buchholz, Germany",
+      "description": "Ausbildung der Fachinformatiker-Anwendungsentwicklung in Vollzeit sowie neuer Softwareentwickler in Boppard-Buchholz, Dubai, Hamburg und anderen Standorten.",
+      "url": "https://www.epg.com/",
+      "startDate": "2016-01-01",
+      "endDate": "2021-02-28",
+      "summary": "",
+      "highlights": ["COBOL", "Datenbank", "SQL", "Ausbilder"]
+    },
+    {
+      "name": "Ehrhardt+Partner Group",
+      "position": "Expert Trainer Software Development",
+      "location": "Boppard-Buchholz, Germany",
+      "description": "Begleiten der Umstellung der Programmiersprache für das Produkt EPG ONE™ Warehouse Management System (LFS) von COBOL auf C++. Erstellen von Schulungsmaterial für alle Mitarbeiter.\n\n      Zeitgleich Ausbildung der Fachinformatiker-Anwendungsentwicklung und Betreuung neuer Softwareentwickler.",
+      "url": "https://www.epg.com/",
+      "startDate": "2021-03-01",
+      "endDate": "2022-05-31",
+      "summary": "",
+      "highlights": ["C++", "Datenbank", "SQL", "Ausbilder"]
+    },
+    {
+      "name": "Ehrhardt+Partner Group",
+      "position": "Expert Trainer Software Development",
+      "location": "Boppard-Buchholz, Germany",
+      "description": "Erstellen eines Schulungskonzepts und Unterlagen zur Ausbildung in TypeScript (Angular und NestJS).\n\nAusbildung der Fachinformatiker-Anwendungsentwicklung in Vollzeit in TypeScript. Betreuung eines internen Entwicklungsprojekts in Angular und NestJS.",
+      "url": "https://www.epg.com/",
+      "startDate": "2022-05-01",
+      "summary": "",
+      "highlights": ["TypeScript", "Angular", "NestJS", "MongoDB", "Ausbilder"]
     }
   ],
   "volunteer": [
@@ -100,17 +143,17 @@
     {
       "name": "Programming",
       "level": "Master",
-      "keywords": ["C++", "COBOL"]
+      "keywords": ["C++", "COBOL", "TypeScript", "PHP", "Python"]
     },
     {
       "name": "Frontend Development",
       "level": "Advanced",
-      "keywords": ["HTML", "CSS", "PHP", "Javascript", "TypeScript", "Angular"]
+      "keywords": ["HTML", "CSS", "Javascript", "Angular"]
     },
     {
       "name": "Backend Development",
       "level": "Master",
-      "keywords": ["API", "REST", "NestJS", "Python", "Flask"]
+      "keywords": ["API", "REST", "NestJS", "Flask"]
     },
     {
       "name": "Relational Databases",
@@ -125,7 +168,7 @@
     {
       "name": "Git",
       "level": "Advanced",
-      "keywords": ["Git", "Branching", "GitLab"]
+      "keywords": ["Git", "Branching", "GitLab", "Continuous Integration"]
     },
     {
       "name": "Container",
@@ -135,7 +178,7 @@
     {
       "name": "Agile",
       "level": "Average",
-      "keywords": ["Scrum"]
+      "keywords": ["Scrum", "Agile Manifesto"]
     },
     {
       "name": "Trainer",

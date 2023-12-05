@@ -4,11 +4,7 @@
 @import 'colors-dark.scss';
 @import 'assets/css/fonts.scss';
 @import 'material-icons/iconfont/material-icons.scss';
-
-html,
-body {
-  height: 100%;
-}
+@import 'theme.scss';
 
 body {
   margin: 0;

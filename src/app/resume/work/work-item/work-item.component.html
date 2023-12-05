@@ -1,4 +1,4 @@
-<mat-card class="edu-card year">
+<mat-card>
   <mat-card-title>
     <mat-card-subtitle>{{ element.name }}</mat-card-subtitle>
     <span>{{ element.position }}:</span>
@@ -15,9 +15,14 @@
     src="https://material.angular.io/assets/img/examples/shiba2.jpg"
     alt="Photo of a Shiba Inu"
   /> -->
-  <mat-card-content> </mat-card-content>
+  <mat-card-content>
+    <p>{{ element.description }}</p>
+    <mat-chip-listbox *ngIf="element.highlights.length > 0">
+      <mat-chip *ngFor="let highlight of element.highlights">{{ highlight }}</mat-chip>
+    </mat-chip-listbox>
+  </mat-card-content>
 
   <mat-card-actions *ngIf="element.url">
-    <a mat-button href="{{ element.url }}">URL</a>
+    <a mat-flat-button color="accent" href="{{ element.url }}">URL</a>
   </mat-card-actions>
 </mat-card>

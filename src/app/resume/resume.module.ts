@@ -25,7 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LanguageListComponent } from './languages/language-list/language-list.component';
@@ -64,7 +64,7 @@ import { ResumeService } from './resume.service';
     MatIconModule,
     MatChipsModule,
     MatCardModule,
-    MatDividerModule,
+    MatTooltipModule,
     FontAwesomeModule,
   ],
   providers: [ResumeService],

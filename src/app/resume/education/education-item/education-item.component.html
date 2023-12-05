@@ -1,4 +1,4 @@
-<mat-card class="edu-card year">
+<mat-card>
   <mat-card-title>
     <mat-card-subtitle>{{ element.studyType }}</mat-card-subtitle>
     <span>{{ element.institution }}:</span>
@@ -23,6 +23,6 @@
   </mat-card-content>
 
   <mat-card-actions *ngIf="element.url">
-    <a mat-button href="{{ element.url }}">URL</a>
+    <a mat-flat-button color="accent" href="{{ element.url }}">URL</a>
   </mat-card-actions>
 </mat-card>

@@ -1,0 +1,22 @@
+name: deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: node@18-alpine
+    steps:
+    - uses: actions/checkout@v4
+    
+    - run: npm install
+    - run: npm run build
+
+    - name: copy file via ssh key
+      uses: appleboy/scp-action@master
+      with:
+        HOST: ${{ secrets.SSH_SERVER }}
+        PORT: ${{ secrets.SSH_PORT }}
+        USERNAME: ${{ secrets.SSH_USERNAME }}
+        PASSWORD: ${{ secrets.SSH_PASSWORD }}
+        source: "./dist/resume-viewer/"
+        target: "/andreas.pieger.online/"

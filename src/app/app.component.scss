@@ -31,3 +31,26 @@ nav ul li {
 .spacer {
   flex: 1 1 auto;
 }
+
+@media screen and (max-width: 850px) {
+  nav {
+    width: 100%;
+    height: initial;
+    margin: initial;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: initial;
+  }
+
+  nav ul li {
+    margin: 4px;
+  }
+
+  .spacer {
+    display: none;
+  }
+}

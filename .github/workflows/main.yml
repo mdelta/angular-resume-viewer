@@ -4,13 +4,19 @@ on: [push]
 
 jobs:
   build:
-    runs-on: node@18-alpine
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    
-    - run: npm install
-    - run: npm run build
-
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.13.x
+        cache: npm
+    - name: Install
+      run: npm install
+    - name: Build
+      run: npm run build
     - name: copy file via ssh key
       uses: appleboy/scp-action@master
       with:

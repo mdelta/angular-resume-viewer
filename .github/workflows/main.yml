@@ -26,3 +26,4 @@ jobs:
         PASSWORD: ${{ secrets.SSH_PASSWORD }}
         source: ./dist/resume-viewer/*
         target: ./andreas.pieger.online
+        strip_components: 2

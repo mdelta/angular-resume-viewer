@@ -26,6 +26,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LanguageListComponent } from './languages/language-list/language-list.component';
@@ -66,6 +67,7 @@ import { ResumeService } from './resume.service';
     MatCardModule,
     MatTooltipModule,
     FontAwesomeModule,
+    LayoutModule,
   ],
   providers: [ResumeService],
   exports: [ResumeComponent],

@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <div>
+  <div *ngIf="leftColumn" id="leftcol">
     <section id="work">
       <app-work [items]="workData"></app-work>
     </section>
@@ -7,7 +7,7 @@
       <app-education [items]="educationData"></app-education>
     </section>
   </div>
-  <div id="rightcol">
+  <div *ngIf="rightColumn" id="rightcol">
     <section id="profile-name">
       <app-flipcard>
         <div front>
@@ -25,4 +25,14 @@
       <app-languages *ngIf="languageData.length > 0" [items]="languageData"></app-languages>
     </section>
   </div>
+</div>
+<div *ngIf="sideSwitch" id="sideswitch">
+  <button
+    mat-mini-fab
+    color="primary"
+    aria-label="Example icon button with a home icon"
+    (click)="switchSidebar()"
+  >
+    <mat-icon>sync_alt</mat-icon>
+  </button>
 </div>

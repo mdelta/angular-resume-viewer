@@ -18,3 +18,17 @@
 #profile-name {
   max-height: 100px;
 }
+
+@media screen and (max-width: 850px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #sideswitch {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+}

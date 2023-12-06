@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+
 import { BasicsModel } from 'src/model/basics.model';
 import { LocationModel } from 'src/model/location.model';
 import { SocialMediaModel } from 'src/model/socialmedia.model';
@@ -23,9 +25,32 @@ export class ResumeComponent implements OnInit {
   skillData: SkillModel[] = this.resumeService.skillData;
   languageData: LanguageModel[] = this.resumeService.languageData;
 
-  constructor(private readonly titleService: Title, private readonly resumeService: ResumeService) {}
+  leftColumn = true;
+  rightColumn = true;
+  sideSwitch = false;
+
+  constructor(
+    private readonly titleService: Title,
+    private readonly resumeService: ResumeService,
+    public breakpointObserver: BreakpointObserver,
+  ) {}
 
   ngOnInit() {
     this.titleService.setTitle(`${this.basics.name}, Lebenslauf`);
+
+    this.breakpointObserver.observe(['(max-width: 850px)']).subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        this.rightColumn = false;
+        this.sideSwitch = true;
+      } else {
+        this.rightColumn = true;
+        this.sideSwitch = false;
+      }
+    });
+  }
+
+  switchSidebar() {
+    this.leftColumn = !this.leftColumn;
+    this.rightColumn = !this.rightColumn;
   }
 }
